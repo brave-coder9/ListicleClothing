@@ -9,7 +9,7 @@ const { Types, Creators } = createActions({
   userFailure: null
 })
 
-export const GithubTypes = Types
+export const UserTypes = Types
 export default Creators
 
 /* ------------- Initial State ------------- */
@@ -23,8 +23,8 @@ export const INITIAL_STATE = Immutable({
 
 /* ------------- Selectors ------------- */
 
-export const GithubSelectors = {
-  selectAvatar: state => state.github.avatar
+export const UserSelectors = {
+  selectAvatar: state => state.user.avatar
 }
 
 /* ------------- Reducers ------------- */
