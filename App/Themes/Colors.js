@@ -4,6 +4,8 @@ const colors = {
   black: '#000000',
   clear: 'rgba(0,0,0,0)',
   transparent: 'rgba(0,0,0,0)',
+  textHintColor : '#8A8A8F',
+  inputBox : '#EFEFF4',
   
   facebook: '#3b5998',
   silver: '#F7F7F7',

@@ -6,9 +6,9 @@ export default StyleSheet.create({
     backgroundColor: Colors.white,
     borderRadius: Metrics.buttonRadius,
     margin: Metrics.section,
-    shadowColor: Colors.border,
+    shadowColor: Colors.textHintColor,
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
+    shadowOpacity: 0.6,
     shadowRadius: 2,
   },
   contentContainer: {
