@@ -1,28 +1,6 @@
-import { Platform, Dimensions } from 'react-native'
-
 import Fonts from './Fonts'
 import Metrics from './Metrics'
 import Colors from './Colors'
-
-function isIphoneX() {
-  const dim = Dimensions.get("window");
-
-  return (
-      // This has to be iOS
-      Platform.OS === "ios" &&
-      // Check either, iPhone X or XR
-      (isIPhoneXSize(dim) || isIPhoneXrSize(dim))
-  );
-}
-
-function isIPhoneXSize(dim) {
-  return dim.height == 812 || dim.width == 812;
-}
-
-function isIPhoneXrSize(dim) {
-  return dim.height == 896 || dim.width == 896;
-}
-
 // This file is for a reusable grouping of Theme items.
 // Similar to an XML fragment layout in Android
 
@@ -30,8 +8,7 @@ const ApplicationStyles = {
   screen: {
     mainContainer: {
       flex: 1,
-      backgroundColor: Colors.transparent,
-      paddingTop: isIphoneX() ? 25 : 0
+      backgroundColor: Colors.transparent
     },
     backgroundImage: {
       position: 'absolute',
