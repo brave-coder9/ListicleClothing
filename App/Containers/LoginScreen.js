@@ -9,8 +9,8 @@ export default class LoginScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          _email : '',
-          _password : '',
+          email : '',
+          password : '',
         };
     }
     onPress = () => {
@@ -35,7 +35,7 @@ export default class LoginScreen extends Component {
                         style = {styles.input_area}
                         returnKeyType = 'go'
                         selectionColor = {Colors.textHintColor}
-                        onChangeText = {(_email) => { this.setState({_email: _email})}}
+                        onChangeText = {(email) => { this.setState({email})}}
                         maxLength = {100}/>
                     
                     <TextInput
@@ -50,7 +50,7 @@ export default class LoginScreen extends Component {
                         style = {styles.input_area}
                         returnKeyType = 'go'
                         selectionColor = {Colors.textHintColor}
-                        onChangeText = {(_password) => { this.setState({_password: _password})}}
+                        onChangeText = {(password) => { this.setState({password})}}
                         maxLength = {100}/>
                     <View style={styles.btnLogin}>
                         <Button title={'Login'} style={styles.login} onPress={this.onPress} />

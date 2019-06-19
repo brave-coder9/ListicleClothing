@@ -19,7 +19,7 @@ export default class Button extends Component {
         onPress={() => this.props.onPress()}
       >
         <View style={styles.contentContainer}>
-          <Text style={styles.title}>{title && title.toUpperCase()}</Text>
+          <Text style={[styles.title, this.props.textStyle]}>{title && title.toUpperCase()}</Text>
         </View>
       </TouchableOpacity>
     )

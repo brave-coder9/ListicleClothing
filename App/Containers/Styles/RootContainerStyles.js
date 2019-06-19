@@ -24,7 +24,7 @@ function isIPhoneXrSize(dim) {
 export default StyleSheet.create({
   applicationView: {
     flex: 1,
-    paddingTop: isIphoneX() ? 25 : 0
+    paddingTop: isIphoneX() ? 30 : 0
   },
   container: {
     flex: 1,

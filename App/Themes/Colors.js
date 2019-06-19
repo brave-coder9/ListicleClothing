@@ -6,7 +6,11 @@ const colors = {
   transparent: 'rgba(0,0,0,0)',
   textHintColor : '#8A8A8F',
   inputBox : '#EFEFF4',
-  
+  grey : '#f4f4f4',
+  greyDark : '#505254',
+  green : '#82a649',
+  blue : '#2980be',
+
   facebook: '#3b5998',
   silver: '#F7F7F7',
   steel: '#CCCCCC',
@@ -24,7 +28,7 @@ const colors = {
   fire: '#e73536',
   drawer: 'rgba(30, 30, 29, 0.95)',
   eggplant: '#251a34',
-  border: '#483F53',
+  border: '#ced4da',
   banner: '#5F3E63',
   text: '#E0D7E5'
 }
