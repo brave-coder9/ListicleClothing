@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import Accordion from 'react-native-collapsible/Accordion'
 import { Colors } from '../Themes'
 import styles from './Styles/CollapsibleViewStyles'

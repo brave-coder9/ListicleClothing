@@ -3,6 +3,7 @@ import LaunchScreen from '../Containers/LaunchScreen'
 import LoginScreen from '../Containers/LoginScreen'
 import CartScreen from '../Containers/CartScreen'
 import ScanCodeScreen from '../Containers/ScanCodeScreen'
+import CheckOutScreen from '../Containers/CheckOutScreen'
 
 import styles from './Styles/NavigationStyles'
 
@@ -12,10 +13,11 @@ const PrimaryNav = createStackNavigator({
   LoginScreen: { screen: LoginScreen },
   CartScreen: { screen: CartScreen },
   ScanCodeScreen: { screen: ScanCodeScreen },
+  CheckOutScreen: { screen: CheckOutScreen },
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'ScanCodeScreen',
+  initialRouteName: 'LaunchScreen',
   navigationOptions: {
     headerStyle: styles.header
   },

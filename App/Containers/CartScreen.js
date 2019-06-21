@@ -74,7 +74,7 @@ export default class CartScreen extends Component {
             this.props.navigation.navigate('ScanCodeScreen')
         }
         else{ // submit order
-
+            this.props.navigation.navigate('CheckOutScreen')
         }
     }
 

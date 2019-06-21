@@ -38,5 +38,16 @@ export default StyleSheet.create({
     color: Colors.black,
     fontSize   : Fonts.size.medium,
     fontFamily : Fonts.type.base,
-  }
+  },
+  input_area: {
+    flex: 1,
+    borderColor : Colors.border,
+    borderWidth: 1,
+    borderRadius : Metrics.buttonRadius,
+    paddingHorizontal : Metrics.baseMargin,
+    paddingVertical : 9,
+    color: Colors.black,
+    fontSize   : Fonts.size.medium,
+    fontFamily : Fonts.type.base,
+  },
 })
