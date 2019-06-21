@@ -15,7 +15,7 @@ const PrimaryNav = createStackNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
+  initialRouteName: 'ScanCodeScreen',
   navigationOptions: {
     headerStyle: styles.header
   },
