@@ -54,6 +54,7 @@ const PRODUCTS = [
       price: 100,
     },
   ];
+  
 export default class CartScreen extends Component {
     constructor(props) {
         super(props);
@@ -61,12 +62,25 @@ export default class CartScreen extends Component {
             venueList: [],
             value: '',
             username: '',
-            activeSections: [0]
+            activeSections: [0],
+            shipping: {
+                name: SECTIONS[1].content.name,
+                address1: SECTIONS[1].content.address1,
+                address2: SECTIONS[1].content.address2,
+                city: SECTIONS[1].content.city,
+                state: SECTIONS[1].content.state,
+                zip: SECTIONS[1].content.zip,
+                country: SECTIONS[1].content.country,
+            },
         };
     }
 
     onChangeVenue = (val) => {
 
+    }
+
+    updateShipping = (val) => {
+        console.log({val})
     }
 
     onPress = (index) => {
@@ -76,11 +90,10 @@ export default class CartScreen extends Component {
         else{ // submit order
             this.props.navigation.navigate('CheckOutScreen')
         }
-    }
-
-    
+    }  
 
     render () {
+        console.log(this.state.shipping)
         return (
             <ScrollView>
                 <View style={styles.container}>
@@ -116,7 +129,7 @@ export default class CartScreen extends Component {
                     </View>
                     { SECTIONS.length > 0 ?
                         <View style={styles.controlInfo}>
-                            <CollapsibleView data={SECTIONS}/>
+                            <CollapsibleView data={SECTIONS} shipping={(shipping) => this.setState({shipping})}/>
                         </View>
                         : null
                     }    
